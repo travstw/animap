@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animate The Markers</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxmQ6vTW0YbG_jaFqyDUJAvwC1QuER-qo&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src='https://unpkg.com/@turf/turf/turf.min.js' defer></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="controls">
+        <label for="points">Points</label>
+        <input type="number" id="points" name="points" value="10">
+        <button id="update">Update</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
